@@ -9,7 +9,7 @@ import { EmpleadoService } from './empleado.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent{
-  title = 'gestionEmpleadosFronte';
+  title = 'GESTION DE TECNICOS';
   public empleados!: Empleado[];
 
   constructor(private empleadoServicio: EmpleadoService) {

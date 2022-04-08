@@ -5,5 +5,5 @@ export interface Empleado {
   cargo: string;
   phone: string;
   imageUrl: string;
-  code: string;
+  empleadoCode: string;
 }
