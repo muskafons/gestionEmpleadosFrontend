@@ -15,7 +15,7 @@ export class AppComponent {
   public editEmpleado!: Empleado;
   public deleteEmpleado!: Empleado;
 
-  constructor(private empleadoServicio: EmpleadoService) {
+  constructor(private empleadoServicio : EmpleadoService) {
     this.getEmpleados();
   } // Se adiciona al servicio
 
@@ -38,9 +38,10 @@ export class AppComponent {
     });
   }
 
-  public onAddEmpleado(addForm: NgForm): void {
+  public onAddEmpleado(addForm : NgForm): void {
     //alert("OK");
-    document.getElementById('add-employee-form')?.click();
+    document.getElementById('add-employee-form')?.click(); //Una vez reciba los datos del modal, dar click para cerrarlo...
+    
     this.empleadoServicio.addEmpleado(addForm.value).subscribe({
       next: (response: Empleado) => {
         console.log(response);
